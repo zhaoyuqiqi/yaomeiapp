@@ -7,8 +7,8 @@ import router from './router'
 import VueClipboard from 'vue-clipboard2'
 import axios from 'axios';
 import Mui from 'vue-awesome-mui';
-
-Vue.use(Mui);
+import { AddressList, AddressEdit } from 'vant';
+Vue.use(Mui).use(AddressList).use(AddressEdit);
 import VueAxios from 'vue-axios';
 import querystring from 'querystring';
 import Loading from './assets/js/loding.js'

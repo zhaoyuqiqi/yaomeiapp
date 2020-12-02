@@ -49,12 +49,30 @@ export default {
   background-color: #b43e3a !important;
   color: white;
 }
+
 .van-icon-arrow:before{
   color: white;
 }
 .van-icon-share:before{
   color: white
 }
+.van-picker__cancel:before{
+  content:"取消"
+}
+.van-picker__confirm:after{
+   content:"确认"
+}
+.van-address-item .van-icon-checked{
+  color: #b43e3a;
+}
+.van-button--danger{
+background-color:#b43e3a;
+width: 80vw;
+left: 50%;
+margin-left: -40vw;
+border-radius:6.667vw;
+}
+
 .footer {
   /* box-shadow: 0 1px 30px 0px #ccc; */
   position:fixed;

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <van-nav-bar title="添加地址" left-arrow @click-left="onClickLeft"/>
+        <van-nav-bar title="编辑地址" left-arrow @click-left="onClickLeft"/>
         <div class="consignee">
          <ul>
                 <li>
@@ -31,7 +31,7 @@
 
                     <!-- 弹出收货人地址 -->
             <van-popup v-model="show" position="bottom" :overlay="true" >
-                <van-area :area-list="areaList" @confirm='ok' @cancel='no'/>
+                <van-area :area-list="areaList" @confirm='ok' @cancel='no' confirm-button-text="确认" cancel-button-text="取消" />
             </van-popup>
     </div>
 </template>
@@ -104,8 +104,7 @@ import smart from 'address-smart-parse'
                     this.info.province_code=values[0].code
                     this.info.city_code=values[1].code
                     this.info.area_code=values[2].code
-                    this.values=list
-                    
+                    this.values=list   
             },
             no(){
                 // console.log(2)
@@ -245,7 +244,7 @@ button{
     line-height: 10vw;
     text-align: center;
     color: #fff;
-    background-color: rgb(115, 248, 144);
+    background-color:#b43e3a;
     margin: 8vw auto 0 auto;
     
 }

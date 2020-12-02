@@ -36,7 +36,7 @@
 
               <router-link to="address">
             <li>
-                <div class="arr"><img src="../assets/i/01/18.png" alt=""><span>地址管理</span></div>
+                <div class="arr"><img src="../assets/i/01/18.png" alt=""><span>收货地址</span></div>
             </li>
               </router-link>
               <router-link to="set">
